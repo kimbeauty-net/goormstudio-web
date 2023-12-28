@@ -7,7 +7,11 @@ export default function NavBar() {
         <Text fontWeight={'bold'} fontSize={24}>
           goormstudio
         </Text>
-        <HStack justifyContent={'space-around'} w={80}>
+        <HStack
+          justifyContent={'space-around'}
+          display={{ base: 'none', md: 'flex' }}
+          w={80}
+        >
           <Link href="/">
             <Text fontSize={20}>홈</Text>
           </Link>

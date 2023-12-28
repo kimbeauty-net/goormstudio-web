@@ -5,6 +5,7 @@ import {
   HStack,
   Heading,
   Input,
+  SimpleGrid,
   Text,
   VStack,
 } from '@chakra-ui/react'
@@ -38,8 +39,9 @@ export default function Home() {
           </HStack>
           <Divider />
           <VStack w={'full'} mt={12} bgColor={'white'}>
-            <Heading alignSelf={'start'}>서비스</Heading>
-            <HStack justifyContent={'space-between'} h={500} w={'full'} p={24}>
+            <Heading alignSelf={'center'}>서비스</Heading>
+
+            <HStack justifyContent={'space-around'} h={500} w={'full'} p={24}>
               <Box borderRadius={12} bgColor={'black'} p={8} mr={40}>
                 <Text color={'white'} fontWeight={'bold'} fontSize={32}>
                   김미용넷 (준비중)
@@ -65,7 +67,7 @@ export default function Home() {
           </VStack>
           <Divider mt={24} />
           <VStack w={'full'} mt={12} bgColor={'white'}>
-            <Heading alignSelf={'start'}>회사 소식</Heading>
+            <Heading alignSelf={'center'}>회사 소식</Heading>
             <HStack justifyContent={'space-around'} mt={12}>
               <Box borderRadius={12} bgColor={'gray.100'} p={24}>
                 <Text>아직 소식이 없습니다.</Text>
