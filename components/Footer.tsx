@@ -3,7 +3,7 @@ import { Box, SimpleGrid, Text, VStack } from '@chakra-ui/react'
 export default function Footer() {
   return (
     <Box bgColor={'black'} mt={12}>
-      <Box p={12}>
+      <Box p={{ md: 12, base: 8 }}>
         <SimpleGrid columns={{ md: 3, base: 1 }} spacing={8}>
           <VStack align={'start'}>
             <Text color={'white'} fontWeight={'semibold'}>
