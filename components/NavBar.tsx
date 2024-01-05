@@ -18,7 +18,17 @@ import React from 'react'
 
 export default function NavBar() {
   return (
-    <Box p={4} borderBottomWidth={1} bgColor={'white'}>
+    <Box
+      p={{ md: 4, base: 2 }}
+      px={{ base: 4 }}
+      borderBottomWidth={1}
+      bgColor={'white'}
+      position={'fixed'}
+      top={0}
+      left={0}
+      right={0}
+      zIndex="sticky"
+    >
       <HStack justifyContent={'space-between'}>
         <Link href="/">
           <Text fontWeight={'bold'} fontSize={24}>
@@ -53,8 +63,8 @@ function MobileNav() {
   return (
     <Box display={{ md: 'none', base: 'flex' }}>
       <IconButton
-        aria-label="open mobile navbar"
-        icon={<HamburgerIcon />}
+        aria-label="사이드 바 열기"
+        icon={<HamburgerIcon w={6} h={6} />}
         ref={btnRef}
         onClick={onOpen}
         size={'lg'}
